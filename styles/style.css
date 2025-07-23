@@ -1,1 +1,109 @@
+/* font */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Shared CSS */
+
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.btn-primary{
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 41px;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.display-flex{
+    display: flex;
+}
+
+
+/* Custom CSS */
+
+/* Nav Styles */
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu ul{
+    list-style:none;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #3a3a3a;
+    font-weight: 600;
+}
+
+.nav-menu ul{
+    gap: 34px;
+}
+
+.nav-menu ul span{
+    gap: 24px;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    font-size: 1.30rem;
+}
+
+/* header section styles */
+
+.header-container{
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 40px;
+}
+
+.header-section{
+    max-width: 580px;
+}
+
+.header-section h1{
+    font-size: 3.25rem;
+    color: #3a3a3a;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 16px;
+}
+
+.header-section p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+#header-section img{
+    width: 100%;
+}
+
+#header-section{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* sponsors styles */
+
+.sponsors{
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    border-top: 1px  solid rgba(192, 204, 218, 0.1);
+    border-bottom: 1px  solid rgba(192, 204, 218, 0.1);
+    padding: 30px 40px;
+}
