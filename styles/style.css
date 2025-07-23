@@ -100,10 +100,39 @@ nav{
 /* sponsors styles */
 
 .sponsors{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     align-items: center;
-    justify-content: center;
-    gap: 80px;
+    justify-items: center;
     border-top: 1px  solid rgba(192, 204, 218, 0.1);
     border-bottom: 1px  solid rgba(192, 204, 218, 0.1);
-    padding: 30px 40px;
+    padding: 30px 20px;
+}
+
+
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+    }
+
+    .header-container{
+        flex-direction: column-reverse;
+    }
+
+    .header-section{
+        text-align: center;
+    }
+
+    .header-section h1{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+
+    .sponsors{
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 20px;
+        column-gap: 20px;
+    }
 }
